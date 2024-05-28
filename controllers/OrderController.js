@@ -138,7 +138,7 @@ exports.checkStatus = async (req, res) => {
     }
 
     // Retrieve the merchant ID from the environment variables or constants
-    const merchantId = "PGTESTPAYUAT";
+    const merchantId = "M22HYMDNFIT7Q";
 
     // Generate the checksum for authentication
     const keyIndex = 1;
