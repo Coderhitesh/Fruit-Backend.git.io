@@ -26,7 +26,8 @@ async function doPayment(amount, Merchant, transactionId, res, req) {
         const string = payloadMain + '/pg/v1/pay' + apiKey;
         const sha256 = crypto.createHash('sha256').update(string).digest('hex');
         const checksum = sha256 + '###' + keyIndex;
-        const prod_URL = " https://api.phonepe.com/apis/hermes";
+        //const prod_URL = " https://api.phonepe.com/apis/hermes";
+        const prod_URL = "https://api.phonepe.com/apis/hermes/pg/v1/pay";
         // console.log(checksum)
         const options = {
             method: 'POST',
